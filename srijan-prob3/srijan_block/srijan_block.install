@@ -1,0 +1,53 @@
+<?php
+function srijan_block_schema() {
+  $schema['srjan_block'] = array(
+    'description' => 'To store Block Informations',
+    'fields' => array(
+      'id' => array(
+       'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Block Id',        
+      ),
+      'title' => array(
+        'type' => 'varchar',
+        'length' => '1000',
+        'description' => 'Title',
+      ),
+	  'image_path' => array(
+        'type' => 'varchar',
+        'length' => '1000',
+        'description' => 'Image path',
+      ),
+	  'description1' => array(
+        'type' => 'varchar',
+		'length' => '1000',
+        'description' => 'Description',
+      ),
+	  'page_url' => array(
+        'type' => 'varchar',
+		'length' => '1000',
+        'description' => 'Page Url',
+      ), 
+	  'display_page' => array(
+        'type' => 'int',
+		'not null' => TRUE,
+        'description' => 'Display Page',
+      ),
+	  'ip_address' => array(
+        'type' => 'varchar',
+		'length' => '1000',
+        'description' => 'Display Page',
+      ),
+	   'display_ip' => array(
+        'type' => 'int',
+		'not null' => TRUE,
+        'description' => 'Display Ip',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+
+}
+?>

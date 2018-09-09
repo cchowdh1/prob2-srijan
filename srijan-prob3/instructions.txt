@@ -1,0 +1,2 @@
+1. Need to install the module.
+2. Need to use {{srijan_block}} to print the tiles in page.

@@ -1,0 +1,8 @@
+{% for tile in tiles %}
+	{% for item in tile %}
+
+        <img src="{{ item.title }}" />
+        <h4>{{ item.image_path }}</h4>
+        <p>{{ item.description }}</p>
+	{% endfor %}
+{% endfor %}

@@ -1,0 +1,20 @@
+<?php
+use Drupal\srijan_block\Custom\SrijanBlockPrint;
+
+function srijan_theme($existing, $type, $theme, $path) {
+  return array(
+    'srijan' => array(
+		'#theme' => 'srijan',
+		'variables' => array('item' => NULL),
+		
+    ),
+    
+  );
+}
+
+function srijan_block_preprocess(&$vars, $hook) {
+  if($hook == 'page') {
+	$newObj = new SrijanBlockPrint();
+   $vars['srijan_block'] = $newObj->blockPrint();
+  }
+}

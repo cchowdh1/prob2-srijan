@@ -1,0 +1,4 @@
+access all content:
+  title: 'Access content from this module'
+  description: 'Access content from this module.'
+  restrict access: TRUE

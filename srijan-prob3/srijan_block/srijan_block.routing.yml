@@ -1,0 +1,7 @@
+srijan.block_form:
+  path: 'block-add'
+  defaults:
+    _form: '\Drupal\srijan_block\FormCustom\BlockAdd'
+    _title: 'Srijan Block Add Form'
+  requirements:
+    _permission: 'access all content'
